@@ -7,6 +7,7 @@ Public Class Monitor_Ellon
         Dim cmd As String = ""
         Dim tarefa As New servico
         Try
+            'sssssdsdsdsdsdsddd
             cmd = "cmd /c SC.exe create " & txtNomeServico.Text & " binpath= """ & (Directory.GetCurrentDirectory() & "/ServicoMonitor.exe").ToString & """ type= own start= delayed-auto"
             Shell(cmd, AppWinStyle.MaximizedFocus, True)
             Threading.Thread.Sleep(1000)
